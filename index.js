@@ -11,3 +11,4 @@ function calculateSquare(){
     const squared = num * num;
     result.textContent = squared;
 }
+ 
