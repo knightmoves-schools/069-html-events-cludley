@@ -4,11 +4,16 @@ function calculateSquare(){
     const num = parseFloat(value);
 
     if (!isFinite(num)) {
-        result.textContent = "Invalid, please enter a number";
+        result.innerHTML = "Invalid, please enter a number";
         return;
     }
 
     const squared = num * num;
-    result.textContent = squared;
+    result.innerHTML = squared;
+}
+
+const calculateBtn = document.getElementById('calculate');
+if (calculateBtn) {
+    calculateBtn.addEventListener('click', calculateSquare);
 }
  
